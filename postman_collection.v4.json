@@ -1,0 +1,1216 @@
+{
+	"info": {
+		"_postman_id": "7ec511a4-e9fb-4dea-b9bd-04f181539fac",
+		"name": "ManagementSystemBE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28278084",
+		"_collection_link": "https://www.postman.com/warped-equinox-646928/workspace/1-taskquartsoft/collection/28278084-7ec511a4-e9fb-4dea-b9bd-04f181539fac?action=share&source=collection_link&creator=28278084"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "Adm",
+							"item": [
+								{
+									"name": "Subscription",
+									"item": [
+										{
+											"name": "show",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/asubscription",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"asubscription"
+													]
+												},
+												"description": "``` json\n{{BASE_URL}}api/v1/asubscription\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "create",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"name\": \"Hennepin\",\r\n    \"price\": 8441.18,\r\n    \"max_articles\": 14\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/subscription",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"subscription"
+													]
+												},
+												"description": "``` json\n{\n    \"name\": \"Hennepin\",\n    \"price\": 8441.18,\n    \"max_articles\": 14\n}\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "update",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"name\": \"Facetoface bifurcated extranet\",\r\n    \"price\": 1641,\r\n    \"max_articles\": 241\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/subscription/4",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"subscription",
+														"4"
+													]
+												},
+												"description": "``` json\n{\n    \"name\": \"Facetoface bifurcated extranet\",\n    \"price\": 1641,\n    \"max_articles\": 241\n}\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "delete",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/subscription/4",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"subscription",
+														"4"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Articles",
+									"item": [
+										{
+											"name": "pages",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/articles?filter%5Bwith%5D%5B0%5D=author&filter%5Bq%5D=%25Nicholaus+Denesik%25&page=1",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"articles"
+													],
+													"query": [
+														{
+															"key": "filter%5Bwith%5D%5B0%5D",
+															"value": "author"
+														},
+														{
+															"key": "filter%5Bq%5D",
+															"value": "%25Nicholaus+Denesik%25"
+														},
+														{
+															"key": "page",
+															"value": "1"
+														}
+													]
+												},
+												"description": "``` bash\n{{BASE_URL}}api/v1/articles?filter[with][0]=author&filter[q]=%Nicholaus+Denesik%&page=1\n\n ```"
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "LOGIN_AS_ADMIN",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													"/*\r",
+													"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+													"    console.log(response.json());\r",
+													"});\r",
+													"*/\r",
+													"\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										},
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var jsonData = pm.response.json();\r",
+													"var token=pm.response.json().token;\r",
+													"if(token){\r",
+													" pm.collectionVariables.set(\"TOKEN\",token);\r",
+													" // console.log(token);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\",\r\n    \"remember\": \"\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}api/v1/login",
+											"host": [
+												"{{BASE_URL}}api"
+											],
+											"path": [
+												"v1",
+												"login"
+											]
+										},
+										"description": "``` json\n{\n    \"email\": \"admin@example.com\",\n    \"password\": \"password\",\n    \"remember\": \"\"\n}\n\n ```"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Users",
+							"item": [
+								{
+									"name": "Subscription",
+									"item": [
+										{
+											"name": "show",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/subscription",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"subscription"
+													]
+												},
+												"description": "``` json\n{\n    \"list\": 1\n}\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "update",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"is_active\": false\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/subscription/14",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"subscription",
+														"14"
+													]
+												},
+												"description": "``` json\n{\n    \"buy\": {\n        \"is_active\": false,\n        // \"amount\" : 3441.00,\n    }\n}\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "delete",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/subscription/14",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"subscription",
+														"14"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Articles",
+									"item": [
+										{
+											"name": "show",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/articles?filter%5Bwith%5D%5B0%5D=author&filter%5Bq%5D=%25Nicholaus+Denesik%25&page=1",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"articles"
+													],
+													"query": [
+														{
+															"key": "filter%5Bwith%5D%5B0%5D",
+															"value": "author"
+														},
+														{
+															"key": "filter%5Bq%5D",
+															"value": "%25Nicholaus+Denesik%25"
+														},
+														{
+															"key": "page",
+															"value": "1"
+														}
+													]
+												},
+												"description": "{{BASE_URL}}api/v1/articles?filter%5Bwith%5D%5B0%5D=author&filter%5Bq%5D=%25Nicholaus+Denesik%25&page=1"
+											},
+											"response": []
+										},
+										{
+											"name": "create",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"data\": {\r\n        \"title\": \"Extended directional paradigm2\",\r\n        \"body\": \"Alice could hardly hear the words:-- 'I speak severely to my boy, I beat him when he sneezes: He only does it to annoy, Because he knows it teases.' CHORUS. (In which the cook and the baby was.\"\r\n    }\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/articles",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"articles"
+													]
+												},
+												"description": "``` json\n{\n    \"data\": {\n        \"title\": \"Extended directional paradigm\",\n        \"body\": \"Alice could hardly hear the words:-- 'I speak severely to my boy, I beat him when he sneezes: He only does it to annoy, Because he knows it teases.' CHORUS. (In which the cook and the baby was.\"\n    }\n}\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "update",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"data\": {\r\n        \"title\": \"Balanced bottom-line neural-net\",\r\n        \"body\": \"Alice could see it trying in a helpless sort of way to fly up into a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast,) she very soon finished.\"\r\n    }\r\n}"
+												},
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/articles/70",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"articles",
+														"70"
+													]
+												},
+												"description": "``` json\n{\n    \"data\": {\n        \"title\": \"Balanced bottom-line neural-net\",\n        \"body\": \"Alice could see it trying in a helpless sort of way to fly up into a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast,) she very soon finished.\"\n    }\n}\n\n ```"
+											},
+											"response": []
+										},
+										{
+											"name": "delete",
+											"event": [
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "test",
+													"script": {
+														"exec": [
+															"\r",
+															""
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"content-type": true
+												}
+											},
+											"request": {
+												"auth": {
+													"type": "bearer",
+													"bearer": [
+														{
+															"key": "token",
+															"value": "{{TOKEN}}",
+															"type": "string"
+														}
+													]
+												},
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{BASE_URL}}api/v1/articles/82",
+													"host": [
+														"{{BASE_URL}}api"
+													],
+													"path": [
+														"v1",
+														"articles",
+														"82"
+													]
+												},
+												"description": "``` json\n{\n\n ```"
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "LOGIN_AS_USER",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													"/*\r",
+													"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+													"    console.log(response.json());\r",
+													"});\r",
+													"*/\r",
+													"\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										},
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var jsonData = pm.response.json();\r",
+													"var token=pm.response.json().token;\r",
+													"if(token){\r",
+													" pm.collectionVariables.set(\"TOKEN\",token);\r",
+													" // console.log(token);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"content-type": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"ella.sauer@example.org\",\r\n    \"password\": \"password\",\r\n    \"remember\": \"\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASE_URL}}api/v1/login",
+											"host": [
+												"{{BASE_URL}}api"
+											],
+											"path": [
+												"v1",
+												"login"
+											]
+										},
+										"description": "``` json\n{\n    \"email\": \"jovanny.sauer@example.org\",\n    \"password\": \"password\",\n    \"remember\": \"\"\n}\n\n ```"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "whoami",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true,
+									"accept": true
+								}
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{TOKEN}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{BASE_URL}}api/v1/whoami",
+									"host": [
+										"{{BASE_URL}}api"
+									],
+									"path": [
+										"v1",
+										"whoami"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"NEW USER\",\r\n    \"email\": \"new_user@example.com\",\r\n    \"password\": \"password\",\r\n    \"remember\": \"\"\r\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}api/v1/register",
+									"host": [
+										"{{BASE_URL}}api"
+									],
+									"path": [
+										"v1",
+										"register"
+									]
+								},
+								"description": "``` json\n{\n    \"name\": \"NEW USER\",\n    \"email\": \"new_user@example.com\",\n    \"password\": \"password\",\n    \"remember\": \"\"\n}\n\n ```"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "[HOST_URL]",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN",
+			"value": ""
+		}
+	]
+}
